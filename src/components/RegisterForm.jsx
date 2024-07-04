@@ -209,9 +209,10 @@ const RegisterForm = () => {
           >
             <Form.Label>Province</Form.Label>
             <Form.Select
-              aria-label="Select Province"
-              {...register("province", { required: "Province is required" })}
-              isInvalid={!!errors.province}
+              aria-label="Select Country"
+              defaultValue="Nepal" // Set the default value here
+              {...register("country", { required: "Country is required" })}
+              isInvalid={!!errors.country}
             >
               {province}
             </Form.Select>
